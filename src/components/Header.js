@@ -14,7 +14,7 @@ export function Header() {
       )}
 
       {!isAuthenticated && (
-        <div>
+        <div style={{ textAlign: 'center', marginTop : '40px' }}>
           <p>You're not logged in.</p>
           <button onClick={() => loginWithPopup()}>Log in</button>
         </div>
