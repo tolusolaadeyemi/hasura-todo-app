@@ -14,7 +14,7 @@ function App () {
     <main>
     {isAuthenticated && (
     <div className="h-100 w-full flex items-center justify-center font-sans">
-	  <div className="bg-white rounded shadow p-6 m-4 w-full md:w-3/4 lg:max-w-lg">
+	  <div className="bg-white rounded shadow p-6 m-4 w-full md:w-3/4">
       <AddNote />
       <GetNotes/>
       </div>
