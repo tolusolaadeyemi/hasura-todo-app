@@ -28,10 +28,13 @@ export default function GetNotes(props) {
     }).then(() => alert("Deleted"));
   };
 
-  const markItemAsDone = event => {
-    const element = event.target;
-    element.classList.toggle("finisehd");
+  const markItemAsDone= (id) => {
+    var whenClicked = document.getElementById(id);
+    whenClicked.addEventListener('click', function(){
+    this.className = "finished";
+  })
 };
+
     return (
     <div className="flex mb-4 items-center">
         <ul className="list-items">
