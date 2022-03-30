@@ -1,13 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("./dream.png");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.load {
+  margin-top: 20%;
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+}
+
+.finished{
+  text-decoration: line-through;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 1px 0 10px 0;
+  border: 1px solid #3b3c40;
+  background: white;
+
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 1px 0 10px 0;
+  border: 1px solid #3b3c40;
+  background: white;
+
 }

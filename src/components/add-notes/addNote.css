@@ -1,0 +1,56 @@
+
+.container {
+    margin-top: 15%;
+    margin: auto;
+    width: 30%;
+    padding: 50px;
+    background-color: white;
+    padding-inline-start: 30px;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.little-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 1px 0 10px 0;
+    border: 1px solid #c75bab;
+    background: white;
+
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 1px 0 10px 0;
+    border: 1px solid #c75bab;
+    background: white;
+
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 25%;
+    padding: 8px;
+    border: 1px solid #c75bab;
+    border-radius: 10px;
+    margin-top: 7%;
+    background-color: #c75bab;
+}
