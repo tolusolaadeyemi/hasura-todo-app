@@ -13,8 +13,8 @@ function App () {
     </header>
     <main>
     {isAuthenticated && (
-    <div className="container h-100 w-full flex items-center justify-center font-sans">
-	  <div className="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
+    <div className="h-100 w-full flex items-center justify-center font-sans">
+	  <div className=" container bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg">
       <AddNote />
       <GetNotes/>
       </div>
