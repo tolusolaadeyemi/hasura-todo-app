@@ -28,22 +28,17 @@ export default function GetNotes(props) {
     }).then(() => alert("Deleted"));
   };
 
-  const markItemAsDone= (id) => {
-    var whenClicked = document.getElementById(id);
-    whenClicked.addEventListener('click', finished);
-  }
-  
-  function finished() {
-    this.className = "finished";
-    this.removeEventListener('click',finished);
-  }
+  markItemAsDone = event => {
+    const element = event.target;
+    element.classList.toggle("finisehd");
+};
     return (
     <div className="flex mb-4 items-center">
         <ul className="list-items">
         {data.notes.map((item) => (
         <li id={item.note_id}className="w-full text-grey-darkest" key={item.note_id}> {item.name}
-        <button id="myFinished" onClick={() => markItemAsDone(item.note_id)}className="shrink md:shrink-0 p-1 mr-9 ml-9 mb-2 border-2 rounded hover:text-white border-green hover:bg-green">mark as done ✅</button>
-        <button onClick={() => deleteNoteId(item.note_id)} className="shrink md:shrink-0 p-1 ml-2 mb-2 border-2 rounded text-red border-red hover:text-white hover:bg-red">delete 🗑️</button>
+        <button id="myFinished" onClick={this.markItemAsDone} key={item.note_id}className="flex-no-shrink p-1 mr-9 ml-9 mb-2 border-2 rounded hover:text-white border-green hover:bg-green">mark as done ✅</button>
+        <button onClick={() => deleteNoteId(item.note_id)} className="flex-no-shrink p-1 ml-2 mb-2 border-2 rounded text-red border-red hover:text-white hover:bg-red">delete 🗑️</button>
         </li>
         ))}
         </ul>
