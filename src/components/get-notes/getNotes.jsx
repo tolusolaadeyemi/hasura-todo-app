@@ -2,7 +2,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { getNotesQuery,deleteNoteMutation } from "../../queries/index";
 import { useQuery, useMutation } from "@apollo/client";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function GetNotes(props) {
@@ -46,6 +46,8 @@ export default function GetNotes(props) {
   }
 
     return (
+      <>
+    {isAuthenticated && (
     <div className="flex mb-4 items-center">
         <ul className="list-items">
         {data.notes.map((item) => (
@@ -56,6 +58,8 @@ export default function GetNotes(props) {
         ))}
         </ul>
     </div>
+    )}
+  </>
     );
         };
 

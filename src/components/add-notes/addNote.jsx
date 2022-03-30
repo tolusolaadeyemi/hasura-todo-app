@@ -35,7 +35,7 @@ export default function CreateNote() {
             <h1 className="text-grey-darkest">add a sticky node 🌟 </h1>
             <form onSubmit={handleSubmit}>
             <div className="flex mt-4">
-                <input className="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker" placeholder="example: clean my room today 🛁" type="text"
+                <input className="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-grey-darker" placeholder="example: clean today 🛁" type="text"
                         value={name}
                         onChange={e => setName(e.target.value)}
                         required/>
