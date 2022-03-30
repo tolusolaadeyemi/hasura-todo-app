@@ -16,6 +16,10 @@ body {
   color: #000;
 }
 
+.list-items{
+  list-style-type: circle;
+}
+
 .finished{
   text-decoration: line-through;
 }
