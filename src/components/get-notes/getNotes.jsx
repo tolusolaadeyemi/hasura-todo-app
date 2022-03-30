@@ -40,8 +40,8 @@ export default function GetNotes(props) {
         <ul className="list-items">
         {data.notes.map((item) => (
         <li id={item.note_id}className="w-full text-grey-darkest" key={item.note_id}> {item.name}
-        <button id="myFinished" onClick={() => markItemAsDone(item.note_id)}className="shrink w-20 h-7 p-1 mr-9 ml-9 border-2 rounded hover:text-white border-green hover:bg-green">done </button>
-        <button onClick={() => deleteNoteId(item.note_id)} className="shrink w-20 h-7 p-1 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red">delete</button>
+        <button id="myFinished" onClick={() => markItemAsDone(item.note_id)}className="shrink w-20 h-7 p-2 mr-9 ml-9 border-2 rounded hover:text-white border-green hover:bg-green">done </button>
+        <button onClick={() => deleteNoteId(item.note_id)} className="shrink w-20 h-7 p-2 ml-2 border-2 rounded text-red border-red hover:text-white hover:bg-red">delete</button>
         </li>
         ))}
         </ul>
