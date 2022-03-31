@@ -40,7 +40,7 @@ export default function CreateNote() {
                         onChange={e => setName(e.target.value)}
                         required/>
                 {error && <pre>{JSON.stringify(error)}</pre>}
-                <button className="flex-no-shrink p-1 border mb-2 ml-2 rounded text-teal border-teal hover:text-white hover:bg-teal" type="submit" value="Add"> {loading ? "Creating" : "Create"}</button>
+                <button className="flex-no-shrink p-1 border mb-2 ml-2 rounded text-black border-teal hover:text-white hover:bg-teal" type="submit" value="Add"> {loading ? "Creating" : "Create"}</button>
             </div>
             </form>
         </div>
